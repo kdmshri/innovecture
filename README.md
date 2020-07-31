@@ -12,11 +12,12 @@ By following this repository you can able to setup a DevOps CI/CD Pipeline using
 - Kubernetes
 
 ## CICD 
-CICD takes care of git screts, sast by sonar, dependency check by owasp dependency checker.
+Their is only one PIPELINE JOB which takes care of everything and leaves the code and environment clean and simple.
+CICD works on git-secrets, sast by sonar, dependency check by owasp.
 Artifactory is maintained at docker hub.
-at the end of the cicd basseline pen test is done by owasp zap.
+at the end of the cicd bassline pen-test is done by owasp zap.
 
 the ansinble plays important part in deployment it
-1) creates a docker container out of image
-2) deployes deployment and service on k8s cluster
+1) creates a docker container out of Dockerfile
+2) Executes Deployment and Service on k8s cluster.
 
